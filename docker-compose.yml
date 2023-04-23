@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  yt-list-download:
+    image: yt-list-download
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - E:\useSyncthing\useSynced\useMusics\useLords:/usr/src/app/useLords
+      - E:\useSyncthing\useSynced\useMusics\useThemes:/usr/src/app/useThemes
+    restart: unless-stopped

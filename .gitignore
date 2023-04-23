@@ -1,5 +1,4 @@
 videos/
 .env
-inputs.js
 **/.DS_Store
 node_modules

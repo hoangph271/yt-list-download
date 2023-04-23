@@ -76,7 +76,7 @@ const downloadMp3 = async (videoUrl, outputPath) => {
 }
 
 // ! Not sure if this function works
-const { FFMPEG_PATH = '/opt/homebrew/bin/ffmpeg' } = process.env
+const { FFMPEG_PATH = '/usr/bin/ffmpeg' } = process.env
 const downloadMp4 = async (videoUrl, outputPath) => {
   const ws = fs.createWriteStream(outputPath)
 
